@@ -1,1 +1,5 @@
-{ "name": "cafwebyesod", "version": "0.0.1", "dependencies": {} }
+{ "name": "cafwebyesod", "version": "0.0.1","env": {
+    "BUILDPACK_URL": {
+      "description": "Heroku buildpack for deploying Haskell apps",
+      "value": "https://github.com/mietek/haskell-on-heroku"
+    }, "dependencies": {} }
