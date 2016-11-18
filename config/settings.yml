@@ -24,12 +24,12 @@ approot:        "_env:APPROOT:http://cafwebyesod.herokuapp.com"
 # See https://github.com/yesodweb/yesod/wiki/Configuration#parsing-numeric-values-as-strings
 
 database:
-  user:     "_env:PGUSER:cafwebapp_LOWER"
-  password: "_env:PGPASS:cafwebapp"
-  host:     "_env:PGHOST:localhost"
+  user:     "_env:PGUSER:rczxpxuqihdeyk"
+  password: "_env:PGPASS:5a_Qc8Jy0YXYdHyPipqXhHb5Fs"
+  host:     "_env:PGHOST:ec2-50-19-240-113.compute-1.amazonaws.com"
   port:     "_env:PGPORT:5432"
   # See config/test-settings.yml for an override during tests
-  database: "_env:PGDATABASE:cafwebapp_LOWER"
+  database: "_env:PGDATABASE:d2n09gok246nb8"
   poolsize: "_env:PGPOOLSIZE:10"
 
 copyright: Insert copyright statement here
