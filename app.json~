@@ -1,0 +1,12 @@
+{
+  "name": "cafwebyesod",
+  "description": "Aplicacion Gimnasio Universidad El Bosque",
+  "logo": "https://halcyon.sh/logo.svg",
+  "repository": "https://github.com/mietek/haskell-on-heroku-tutorial",
+  "env": {
+    "BUILDPACK_URL": {
+      "description": "Heroku buildpack for deploying Haskell apps",
+      "value": "https://github.com/mietek/haskell-on-heroku"
+    }
+  }
+}
