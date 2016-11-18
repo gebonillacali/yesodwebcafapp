@@ -1,0 +1,577 @@
+verde = #88A707
+azul = #2090E7
+magenta = #BE3376
+gris = #868589
+
+a
+	text-decoration none
+	transition all 0.3s
+body
+	color gris
+	font-family: 'Roboto', sans-serif;
+	font-size 1em
+	font-weight 300
+	line-height 150%
+	margin 0 
+	padding 0
+footer
+	background black
+	padding 1em
+h1, h4
+	color black
+	font-size 1.625em
+	line-height 150%
+	margin 0
+	padding 0
+	text-align center
+h2
+	border 1px solid verde
+	border-radius 3px
+	color verde
+	font-size 2.125em
+	line-height 150%
+	margin 0 auto
+	margin-bottom 2em
+	margin-top 2em
+	max-width 270px
+	padding 1em
+	text-align center
+h3
+	color magenta
+	font-size 1.5em
+	margin 0
+	padding 0.5em
+	text-align center
+header	
+	background black
+	box-shadow 0px 1px 10px rgba(black, 0.5)
+	color white	
+	height 80px
+	margin 0
+	padding 0
+	position fixed
+	width 100%
+	z-index 9
+hr
+	background verde
+	border 0
+	height 1px
+	margin 0 auto
+	margin-top 2em	
+	padding 0
+	width 70%
+p
+	color gris
+	line-height 150%
+	margin 0
+	padding 0
+	text-align center
+	
+nav, ul, li, a
+	margin 0
+	padding 0
+li
+	list-style none
+	
+// ----- Inicio Formulario ------
+/*————————Boton enviar————————*/
+.btn-b
+	background verde
+	border 0px solid azul
+	border-bottom 3px solid #646D07
+	border-radius 3px
+	color white
+	cursor pointer
+	padding 8px
+	&:hover 
+		background #ABC41A
+		border-bottom 3px solid #879314
+	&:active
+		background verde
+#bottom_container
+	overflow hidden	
+#contactform
+	//border 1px solid azul
+	background azul
+	margin 3em auto;
+	margin-bottom 0
+	overflow hidden
+	width 100%
+	label 
+		color white
+		display block
+		font-size 1.25em 
+		margin 5px 0
+		text-align left
+		vertical-align baseline
+#c_btns
+	margin-top 1em	
+#c_enviar
+	display block
+	margin 0 auto
+	width 100px
+.c_error
+	color red
+	font-size 12px
+	margin-left 5px
+#c_form
+	margin 0 auto
+	margin-bottom 2em
+	margin-top 2em
+	width 90%
+#c_form textarea
+	min-height 150px
+	outline 1px solid white
+.c_input, #c_form textarea
+	background white
+	border 1px solid #ddd
+	border-radius 2px
+	margin-bottom 10px 
+	padding 7px
+	width  98%
+input:focus, textarea:focus
+	outline none	
+#c_information
+	background #25A25A
+	border solid 1px #ccc
+	color #fff
+	font-size 14px
+	padding 4px 0 4px 0
+	text-align center
+	width: 100%
+.hide
+	display none
+// ----- Fin Formulario ------	
+	
+// ----- Menu navegación mobile ------
+#menuButton	
+	border 1px solid rgba(verde, 0.4)
+	border-radius 2px
+	cursor pointer
+	margin 0
+	overflow hidden
+	padding 0.7em 0.7em 0.7em 0.7em
+	transition all 0.3s	
+	// IconFonts	
+	&:before
+		color white
+		content "b"
+		font-family: "giowebsites";
+		font-size 32px
+		text-shadow 1px 1px 1px rgba(black, 0.7)
+		vertical-align middle		
+	&:hover
+		opacity 0.4	
+		
+#menuMobile		
+		display inline-block
+		float right	
+		margin  1em 1em 0em 1em
+		overflow hidden	
+		padding 0
+// ----- Menu navegación normal ------	
+#menuNormal
+		background rgba(black, 0.7)
+		border-top 4px solid magenta
+		display block
+		float right
+		margin -0.7em 0 0 0 
+		width 100%
+		ul
+			li	
+				cursor pointer	
+				display block
+				a
+					color white
+					display block
+					font-size 18px
+					padding 0.3em 1em
+					text-transform uppercase
+					&:hover
+						//border-bottom 2px solid #748703	
+						background verde
+						text-shadow 1px 1px 1px rgba(black, 0.4)
+				.azul
+					background azul
+					&:hover		
+						background magenta
+// -----  Página - Inicio - ------
+#pag1
+	h1
+		margin 2em 0 1em 0	
+// -----  Fondo página - Nosotros - ------	
+#pag2
+	background grey
+	background url(../img/ciudad.jpg) 50% 0 no-repeat fixed
+	background-size cover
+	margin 0 auto
+	min-height 600px
+// -----  Fondo página - Que hacemos - ------	
+#pag3	
+	padding-bottom 3em
+// -----  Fondo  página - Planes Web - ------	
+#pag4
+	background #FC4E51
+
+	.fondo
+		padding-top 3em
+#pag5
+	text-align center
+	h2
+		margin 2em 1em 1.5em 1em
+		display inline-block	
+	h3
+		color black
+		font-size 17px
+
+// ----- Banner principal ------
+.banner
+	background rgba(grey, 01)
+	height 450px
+	margin 0 auto
+	width 100%
+// ----- Página - Servicios - ------
+.caja
+	//border 1px solid verde
+	//box-shadow 0px 0px 4px rgba(black, .5)
+	background white
+	border-radius 3px
+	display block
+	margin 3em 0
+	padding 0
+	width 100%
+	h3
+		display block
+	p
+		padding 1em 0.5em 0.5em 0.5em 
+.base
+	display block 
+	margin 0 auto
+	padding 0.5em
+	width 250px
+	img
+		border-radius 50%
+		box-shadow 0px 0px 28px rgba(black, .6)
+		width 100%
+		
+// -----  Página - Servicios - ------	
+.contenedor1
+	h4
+		color black
+		font-size 1.5em
+// -----  	
+.contenedor2, .contenedor3
+	width 100%
+
+// ----- Página - Planes Web - ------
+.cajaPlanesWeb
+	margin-bottom 0
+	padding 0
+// ----- Footer ------
+.detalleContacto
+	display block
+	font-size 0.875em
+	margin-bottom 2em
+	vertical-align top
+	width 100%
+	h4
+		color white
+		font-size 1.2em
+		font-weight lighter
+		margin 1em 0
+	.mail
+		&:before
+			content "q"
+	.phone
+		&:before
+			content "s"	
+	.location
+		&:before
+			content "p"	
+	.phone, .mail, .location
+		&:before
+			border 1px solid white
+			border-radius 50%
+			display block
+			font-family giowebsites
+			font-size 1em
+			margin 0 auto
+			margin-bottom 0.5em
+			padding 0.3em
+			vertical-align middle
+			width 25px
+.irArriba
+	cursor pointer
+	&:before
+		display inline-block
+		background rgba(grey, .7)
+		bottom 1em
+		color white
+		content "a"
+		font-family giowebsites
+		font-size 1.5em
+		padding 0.4em
+		position fixed
+		right 1em
+		vertical-align top
+		z-index 8
+		border-radius 2px
+		box-shadow 1px 1px 4px rgba(black, 0.7)
+.contratar
+	border 1px solid black
+	color black
+	display block
+	font-size 14px
+	font-weight bold
+	margin 0 auto
+	margin-top 0.7em
+	padding 0.7em
+	text-decoration none
+	text-transform uppercase
+	transition all 0.3s	
+	width 90px
+	&:hover
+		background magenta
+		color white
+		border 0
+		font-weight normal
+
+// ----- Section 1,2,3,4 ------
+.fondo
+	padding 1em 
+	padding-bottom 3em
+// ----- Sección - Planes Web - ------
+.lista	
+	margin 0
+	padding 1.5em
+.listaDetalle
+	border 1px solid rgba(gris, .3)
+	line-height 150%
+	padding 0.7em 0.5em
+// ----- Logo header ------
+.logo
+	float left
+	margin 0 1em
+	padding 0.5em 1em 0.5em 0
+	vertical-align middle
+	width 118px
+	img
+		width 100%	
+// ----- Estilo color ------			
+.magenta
+	color magenta
+	font-weight bold	
+.negro
+	background rgba(black, .5)
+	background url(../img/planesWeb.jpg) 50% 0 no-repeat
+	background-size cover
+	height 300px	
+	margin 0 auto
+	padding 3em 0
+	text-align center
+	width 100%
+	h2
+		display inline-block
+		margin-bottom 0
+		margin-top 1em
+	p
+		color white
+		margin 4em 0 1em 0
+		padding 0 1em
+		text-shadow 1px 1px 2px rgba(black, 0.4)
+// ----- Página - Nosotros - ------
+.nosotros
+	margin-top 7em
+	p
+		font-size 1.25em
+		color white
+		text-shadow 1px 1px 1px rgba(black, 0.3)
+		margin 1.5em 0 1em 0
+.planesWeb
+	background white
+	border-radius 3px
+	box-shadow 0px 0px 25px rgba(black, .7)
+	color black
+	display block
+	margin 0 0 2em 0 
+	padding 2em 0
+	text-align center
+	width 100%
+	h3
+		display block
+		text-transform uppercase
+			
+// ----- Sección - Planes Web - ------
+.precio
+	display block
+	font-size 40px	
+	font-weight bold
+	margin 0
+	padding 0.8em 0
+	sup
+		font-size 20px
+		margin-right 0.3em
+.small
+	p		
+		color rgba(gris, .8)
+		font-size 0.8em		
+// ******  Responsive Tablet  ********
+
+@media screen and (min-width: 768px)
+	// -----  Fondo  página - Planes Web - ------	
+	#contactform
+		#c_form
+			width 700px
+	#menuNormal
+		border-top none	
+		height 80px
+		margin 0
+		width 78%
+		ul
+			float right	
+			margin-top 1.4em
+
+			li	
+				display inline-block
+				a
+					border-radius 2px
+					font-size 16px
+					padding 0.3em 0.5em
+					&:hover
+						background verde
+						border-bottom 2px solid #748703	
+						text-shadow 1px 1px 1px rgba(black, 0.4)
+				.azul
+					border-bottom 2px solid #03568E
+					&:hover		
+						border-bottom 2px solid #9B185D					
+	#pag1
+		padding-bottom 3em	
+		p
+			max-width 90%
+			margin 0 auto		
+
+	// ----- Página - Planes Web - ------
+	#pag4
+		position relative
+	.base
+		width 200px						
+	// ----- Página - Servicios - ------
+	.caja
+		display inline-block
+		margin-right 5%
+		margin-top 1em
+		min-height 390px
+		vertical-align top
+		width 46.5%
+		&:nth-child(even)
+			margin-right 0	
+	.cajaPlanesWeb
+		margin-top 305px
+		overflow hidden
+		padding 0 0.6em 5em 0.6em
+		position relative
+	.central
+		background verde 
+		box-shadow 0px 0px 25px rgba(black, .9)
+		position absolute
+		top 1em
+		width 36%
+		z-index 8	
+	.centro
+		margin 0 auto
+		margin-top 0.5em
+		position relative
+		width 700px
+	// ----- Pertenece al header ------	
+	.content
+		max-width 90%
+		margin 0 auto
+		height 80px
+	// ----- Section class contenedor ------
+	.contenedor1, .contenedor2, .contenedor3
+		margin 0 auto
+		max-width 90%
+	.contenedor3
+		padding-bottom 0em
+	.detalleContacto
+		display inline-block
+		margin-right 4%
+		width 30%
+		&:last-child
+			margin-right 0
+	.fondo
+		padding 1em 0
+	.left
+		float left
+		margin-top 5em
+	// ----- Logo header ------
+	.logo
+		margin-left 0
+	.negro
+		height 400px
+		left 0
+		position absolute 
+		top 0
+		h2
+			display block
+			margin 0 auto
+			margin-top 1em	
+		p
+			display inline-block
+			margin-top 4em
+			max-width 90%
+			padding 0
+	.nosotros
+		margin 0 auto	
+		margin-top 9em	
+		width 90%		
+	.planesWeb
+		display inline-block
+		vertical-align middle
+		width 33.2%	
+		margin-bottom 4.3em
+		h3
+			font-size 1.4em	
+	.right
+		float right
+		margin-top 5em
+
+// ******  Responsive Desktop  ********	 
+@media screen and (min-width: 1024px)		
+	
+	#quitar, #quitar1
+		margin-right 0	
+	// ----- Página - Servicios - ------
+	.caja
+		min-height 420px
+		width 30.5%
+		&:nth-child(even)
+			margin-right 3%
+		&:nth-child(odd)
+			margin-right 3%
+	.cajaPlanesWeb
+		padding-bottom 1.8em
+	.contenedor3 
+		padding-bottom 4em
+	// -----    ------	
+	.content, .contenedor1, .contenedor2, .contenedor3
+		margin 0 auto
+		max-width 80%
+	.negro
+		p
+			max-width 80%
+	.nosotros
+		width 80%
+
+
+
+
+
+
+
+
+
+
+
+		

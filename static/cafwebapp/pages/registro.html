@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+<html ng-app="cafApp">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CENTRO DE ACTIVIDAD FÍSICA</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Bootstrap 3.3.6 -->
+    <link href="../Content/bootstrap.min.css" rel="stylesheet" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- Theme style -->
+    <link href="../Content/AdminLTE.min.css" rel="stylesheet" />
+    <!-- AdminLTE Skins. Choose a skin from the css/skins
+         folder instead of downloading all of them to reduce the load. -->
+    <link href="../Content/skins/_all-skins.min.css" rel="stylesheet" />
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <script src="../Scripts/angular.js"></script>
+    <script src="../Scripts/angular-resource.js"></script>
+    <script src="../app/app.js"></script>
+    <script src="../app/controller/userController.js"></script>
+    <script src="../app/service/userService.js"></script>
+    <script src="../app/controller/tipoUserController.js"></script>
+    <script src="../app/service/tipoUserService.js"></script>
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="hold-transition register-page" ng-controller="usersController">
+    <div class="register-box">
+        <div class="register-logo">
+            <a href="../../pages/index.html" class="logo">
+                <!-- mini logo for sidebar mini 50x50 pixels -->
+                <span class="logo-mini"><img src="../images/logoN.png"/></span>
+            </a>
+        </div>
+        <div class="register-box-body">
+            <p class="login-box-msg">Registro</p>
+            <form action="../../pages/portal.html">
+                <div class="form-group has-feedback">
+                    <input type="text" class="form-control" placeholder="Nombre Completo" ng-model="user.nombre" required>
+                    <span class="glyphicon glyphicon-user form-control-feedback"></span>
+                </div>
+                <div class="form-group has-feedback">
+                    <p>Fecha de nacimiento</p>
+                    <input type="date" class="form-control" placeholder="Fecha de nacimiento" ng-model="user.fechaNacimiento" required>
+                    <span class="glyphicon glyphicon-calendar form-control-feedback"></span>
+                </div>
+                <div class="form-group has-feedback">
+                    <p>Genero</p>
+                    <select class="form-control" placeholder="Genero" ng-model="user.genero" required>
+                        <option value="Hombre">Hombre</option>
+                        <option value="Mujer">Mujer</option>
+                    </select>
+                    <span class="glyphicon glyphicon-user form-control-feedback"></span>
+                </div>
+                <div class="form-group has-feedback">
+                    <input type="text" class="form-control" placeholder="Identificación" ng-model="user.identificacion" required>
+                    <span class="glyphicon glyphicon-qrcode form-control-feedback"></span>
+                </div>
+                <div class="form-group has-feedback">
+                    <input type="email" class="form-control" placeholder="Email" ng-model="user.email" required>
+                    <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+                </div>
+                <div class="form-group has-feedback">
+                    <p>Tipo de usuario</p>
+                    <select class="form-control" placeholder="Tipo de usuario" 
+                    ng-model="user.tipoUsuario"
+                    ng-options="item.id as item.nombre for item in tipoUsers" required>                       
+                    </select>
+                    <span class="glyphicon glyphicon-briefcase form-control-feedback"></span>
+                </div>
+                <div class="form-group has-feedback">
+                    <p>RH</p>
+                    <select class="form-control" placeholder="RH" ng-model="user.rh" required>
+                        <option value="A+">A+</option>
+                        <option value="A-">A-</option>
+                        <option value="O+">O+</option>
+                        <option value="O-">O-</option>
+                        <option value="AB+">AB+</option>
+                        <option value="AB-">AB-</option>
+                        <option value="B+">B+</option>
+                        <option value="B-">B-</option>
+                    </select>
+                    <span class="glyphicon glyphicon-tint form-control-feedback"></span>
+                </div>
+                <div class="row">
+                    <div class="col-xs-8">
+                        <div>
+                            <label>
+                                <input type="checkbox"> Leer <a href="../pages/terminos.html">terminos</a>
+                            </label>
+                        </div>
+                    </div>
+                    <!-- /.col -->
+                    <div class="col-xs-4">
+                        <button type="submit" class="btn btn-primary btn-block btn-flat"  ng-click="addUser(user)">Register</button>
+                    </div>
+                    <!-- /.col -->
+                </div>
+            </form>
+            <a href="login.html" class="text-center">Iniciar sesión</a><br>
+            <a href="portal.html" class="text-center">Página de inicio</a>
+        </div>
+        <!-- /.form-box -->
+    </div>
+    <!-- /.register-box -->
+    <!-- jQuery 2.2.3 -->
+    <script src="../plugins/jQuery/jquery-2.2.3.min.js"></script>
+    <!-- Bootstrap 3.3.6 -->
+    <script src="../Scripts/bootstrap.js"></script>
+    <!-- iCheck -->
+    <script src="../plugins/iCheck/icheck.min.js"></script>
+    <script>
+  $(function () {
+    $('input').iCheck({
+      checkboxClass: 'icheckbox_square-blue',
+      radioClass: 'iradio_square-blue',
+      increaseArea: '20%' // optional
+    });
+  });
+    </script>
+</body>
+</html>

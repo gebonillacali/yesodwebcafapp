@@ -1,0 +1,5 @@
+import Prelude     (IO)
+import MainApp (appMain)
+
+main :: IO ()
+main = appMain

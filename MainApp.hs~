@@ -1,0 +1,21 @@
+{-# LANGUAGE QuasiQuotes, TemplateHaskell, OverloadedStrings, TypeFamilies, MultiParamTypeClasses #-}
+import Yesod
+import Yesod.Static
+
+staticFiles "static"
+
+data App = App
+    { getStatic :: Static
+    }
+
+mkYesod "App" [parseRoutes|
+/ RootR GET
+/static StaticR Static getStatic
+|]
+
+instance Yesod App
+
+getRootR :: Handler RepHtml
+getRootR = defaultLayout [whamlet|$newline never
+<img src=@{StaticR image_png}/>|]
+

@@ -1,0 +1,348 @@
+﻿<!DOCTYPE html>
+<html ng-app="cafApp">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <script src="../Scripts/angular.js"></script>
+    <script src="../Scripts/angular-resource.js"></script>
+    <script src="../app/app.js"></script>
+    <script src="../app/controller/userController.js"></script>
+    <script src="../app/service/userService.js"></script>
+    <title>CENTRO DE ACTIVIDAD FÍSICA</title>
+    <!-- Bootstrap core CSS -->
+    <link href="../Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="../Content/font-awesome.min.css" rel="stylesheet" />
+    <link href="../Content/animate.min.css" rel="stylesheet" />
+    <!-- Custom styling plus plugins -->
+    <link href="../Content/site/custom.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../Content/site/main.css">
+    <!-- Site's customization-->
+    <link href="../Content/site/site.css" rel="stylesheet" type="text/css" />
+    <script src="../Scripts/jquery-1.9.1.min.js"></script>
+    <script src="../Scripts/nprogress.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <!--Fonts-->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,700italic,400italic'   rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700' rel='stylesheet' type='text/css'>
+    <!-- Material Design Lite -->
+    <script src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+    <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.blue-indigo.min.css" />
+    <!-- Material Design icon font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body class="nav-md"  ng-controller="usersController">
+    <div class="container body">
+        <div class="main_container">
+            <div class="col-md-3 left_col">
+                <div id="drawer_left_menu" class="left_col scroll-view">
+                    <div class="navbar nav_title" style="border: 0;">
+                        <a href="index.html" class="site_title">
+                            <img src="../images/logotipo_ueb.png" width="65%" alt="Centro de actividad física"/>
+                        </a>
+                    </div>
+                    <div class="clearfix"></div>
+
+                    <!-- menu profile quick info -->
+                    <div class="profile" style="margin-bottom: 30px">
+                        <div class="profile_pic">
+                            <img src="../images/user/user-m2.png" alt="usuario"
+                                 class="img-circle profile_img">
+                        </div>
+                        <div class="profile_info">
+                            <span>Bienvenido,</span>
+                            <h2>{{operador}}</h2>
+                        </div>
+                    </div>
+                    <!-- /menu prile quick info -->
+                    <br /> <br />
+
+                    <!-- sidebar menu -->
+                    <div id="sidebar-menu"
+                         class="main_menu_side hidden-print main_menu">
+                        <div class="menu_section">
+                            <ul class="nav side-menu">
+                                <li>
+                                    <a>
+                                        <i class="fa fa-eye"></i> Administración <span class="fa fa-chevron-down"></span>
+                                    </a>
+                                    <ul class="nav child_menu" style="display: none">
+                                        <li><a href="citaciones.html">Agendar cita</a></li>
+                                        <li><a href="index.html">Usuarios</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a>
+                                        <i class="fa fa-tasks"></i> Tareas <span class="fa fa-chevron-down"></span>
+                                    </a>
+                                    <ul class="nav child_menu" style="display: none">
+                                        <li><a href="activities.html">Actividades</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a>
+                                        <i class="fa fa-question"></i> Ayudas <span class="fa fa-chevron-down"></span>
+                                    </a>
+                                    <ul class="nav child_menu" style="display: none">
+                                        <li><a href="instalacion.html">Instalación</a></li>
+                                        <li><a href="despliegue.html">Despliegue</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- /sidebar menu -->
+                </div>
+            </div>
+
+            <!-- top navigation -->
+            <div class="top_nav">
+
+                <div class="nav_menu">
+                    <nav class="" role="navigation">
+                        <!-- Hamburger button -->
+                        <div class="nav toggle">
+                            <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+                        </div>
+                        <!-- /Hamburger button -->
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="">
+                                <a href="javascript:;"
+                                   class="user-profile dropdown-toggle" data-toggle="dropdown"
+                                   aria-expanded="false">
+                                    <img src="../images/user/user-m2.png" alt="">{{operador}}<span class=" fa fa-angle-down"></span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-usermenu animated fadeInDown pull-right">
+                                    <li>
+                                        <a href="javascript:;">
+                                            <i class="fa fa-user pull-right"></i> <span>Mi Cuenta</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="login.html">
+                                            <i class="fa fa-sign-out pull-right"></i> Cerrar sesión
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+            </div>
+            <!-- /top navigation -->
+            <!-- page content -->
+            <div class="right_col" role="main">
+                <!-- Main Content -->
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="title_left">
+                            <h3>Usuarios Registrados</h3>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="x_panel">
+                                    <div class="x_title">
+                                        <h2>Usuarios</h2>
+                                        <img class="loaderimg" src="../images/h_loader.gif" alt="Cargando contenido" ng-show="isBusy" />
+                                        <!-- Trigger the modal with a button -->
+                                        <button class="mdl-button mdl-button--fab mdl-button--primary pull-right"
+                                                data-toggle="modal" data-target="#createUser">
+                                            <i class="material-icons">add</i>
+                                        </button>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div class="x_content">
+                                        <!-- Table de reportes -->
+                                        <div class="table-responsive">
+                                            <!-- Table de reportes -->
+                                            <table class="table table-striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Identificación</th>
+                                                        <th>Nombres y apellidos</th>
+                                                        <th>Fecha nacimiento</th>
+                                                        <th>Genero</th>
+                                                        <th>E-mail</th>
+                                                        <th>Tipo de usuario</th>
+                                                        <th>RH</th>
+                                                        <th>Fecha de registro</th>
+                                                        <th>Acciones</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="form-inline" ng-repeat="user in users">
+                                                        <td>
+                                                            <span ng-hide="edit[user.id]" ng-dblclick="showEdition($event, user.id)">{{user.identificacion}}</span>
+                                                            <input type="text" class="form-control" ng-model="user.identificacion" ng-show="edit[user.id]" value="{{user.identificacion}}">
+                                                        </td>
+                                                        <td>
+                                                            <span ng-hide="edit[user.id]" ng-dblclick="showEdition($event, user.id)">{{user.nombre}}</span>
+                                                            <input type="text" class="form-control" ng-model="user.nombre" ng-show="edit[user.id]" value="{{user.nombre}}">
+                                                        </td>
+                                                        <td>
+                                                            <span ng-hide="edit[user.id]" ng-dblclick="showEdition($event, user.id)">{{user.fechaNacimiento}}</span>
+                                                            <input type="date" class="form-control" ng-model="user.fechaNacimiento" ng-show="edit[user.id]" value="{{user.fechaNacimiento}}">
+                                                        </td>
+                                                        <td>
+                                                            <span ng-hide="edit[user.id]" ng-dblclick="showEdition($event, user.id)">{{user.genero}}</span>
+                                                            <select class="form-control" placeholder="Genero" ng-model="user.genero" ng-show="edit[user.id]" value="{{user.genero}}" required>
+                                                                <option value="Hombre">Hombre</option>
+                                                                <option value="Mujer">Mujer</option>
+                                                            </select>
+                                                        </td>
+                                                        <td>
+                                                            <span ng-hide="edit[user.id]" ng-dblclick="showEdition($event, user.id)">{{user.email}}</span>
+                                                            <input type="email" class="form-control" ng-model="user.email" ng-show="edit[user.id]" value="{{user.email}}">
+                                                        </td>
+                                                        <td>
+                                                            <span ng-hide="edit[user.id]" ng-dblclick="showEdition($event, user.id)">{{user.tipoUsuario}}</span>
+                                                            <select class="form-control" placeholder="Tipo de usuario" ng-model="user.tipoUsuario" ng-show="edit[user.id]" value="{{user.tipoUsuario}}" required>
+                                                                <option value="1">Estudiante</option>
+                                                                <option value="2">Docente</option>
+                                                                <option value="3">Administrativo</option>
+                                                                <option value="4">Instructor</option>
+                                                            </select>
+                                                        </td>
+                                                        <td>
+                                                            <span ng-hide="edit[user.id]" ng-dblclick="showEdition($event, user.id)">{{user.rh}}</span>
+                                                            <select class="form-control" placeholder="RH" ng-model="user.rh" ng-show="edit[user.id]" value="{{user.rh}}" required>
+                                                                <option value="A+">A+</option>
+                                                                <option value="A-">A-</option>
+                                                                <option value="O+">O+</option>
+                                                                <option value="O-">O-</option>
+                                                                <option value="AB+">AB+</option>
+                                                                <option value="AB-">AB-</option>
+                                                                <option value="B+">B+</option>
+                                                                <option value="B-">B-</option>
+                                                            </select>
+                                                        </td>
+                                                        <td><span>{{user.fechaRegistro}}</span></td>
+                                                        <td>
+                                                            <button type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" ng-hide="edit[user.id]" ng-click="deleteUser(user)">Eliminar</button>
+                                                            <button type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect btn btn-warning" ng-show="edit[user.id]" ng-click="editUser(user)">Guardar</button>
+                                                        </td>
+                                                    </tr>
+                                                <tfoot>
+                                                    <tr>
+                                                        <th>Showing:</th>
+                                                        <td ng-bind="user.length"></td>
+                                                    </tr>
+                                                </tfoot>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Main Content -->
+                <br />
+                <!-- footer content -->
+                <footer>
+                    <div class="copyright-info">
+                        <p class="pull-right">
+                            <i class="fa fa-copyright c-primary left-marg"></i> GFJ Ltda. <i class="fa fa-map-marker c-primary left-marg"></i>
+                            Av. Cra 9 No. 131 A - 02 - Bogotá D.C. Colombia <i class="fa fa-phone c-primary left-marg"></i> PBX: (571) 6489000- Línea Gratuita:  018000 113033
+                        </p>
+                    </div>
+                    <div class="clearfix"></div>
+                </footer>
+                <!-- /footer content -->
+            </div>
+            <!-- /page content -->
+            <!-- Modal: Create Contact -->
+            <div id="createUser" class="modal fade" tabindex="-1"
+                 role="dialog">
+                <div class="modal-dialog" role="document">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <h3 class="modal-title primary" id="createUserslabel"> Nuevo Usuario </h3>
+                        </div>
+                        <div class="modal-body">
+                            <div class="modal-body">
+                                <div class="form-group label-static">
+                                    <label class="sr-only" for="code">Nombre</label>
+                                    <input class="form-control" type="text" placeholder="Nombre completo" ng-model="user.nombre" required>
+                                </div>
+                                <div class="form-group has-feedback">
+                                    <p>Fecha de nacimiento</p>
+                                    <input type="date" class="form-control" placeholder="Fecha de nacimiento" ng-model="user.fechaNacimiento" required>
+                                    <span class="glyphicon glyphicon-calendar form-control-feedback"></span>
+                                </div>
+                                <div class="form-group has-feedback">
+                                    <p>Genero</p>
+                                    <select class="form-control" placeholder="Genero" ng-model="user.genero" required>
+                                        <option>Hombre</option>
+                                        <option>Mujer</option>
+                                    </select>
+                                    <span class="glyphicon glyphicon-user form-control-feedback"></span>
+                                </div>
+                                <div class="form-group has-feedback">
+                                    <input type="text" class="form-control" placeholder="Identificación" ng-model="user.identificacion" required>
+                                    <span class="glyphicon glyphicon-qrcode form-control-feedback"></span>
+                                </div>
+                                <div class="form-group has-feedback">
+                                    <input type="email" class="form-control" placeholder="Email" ng-model="user.email" required>
+                                    <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+                                </div>
+                                <div class="form-group has-feedback">
+                                    <p>Tipo de usuario</p>
+                                    <select class="form-control" placeholder="Tipo de usuario" ng-model="user.tipoUsuario" required>
+                                        <option value="1">Estudiante</option>
+                                        <option value="2">Docente</option>
+                                        <option value="3">Administrativo</option>
+                                        <option value="4">Instructor</option>
+                                    </select>
+                                    <span class="glyphicon glyphicon-briefcase form-control-feedback"></span>
+                                </div>
+                                <div class="form-group has-feedback">
+                                    <p>RH</p>
+                                    <select class="form-control" placeholder="RH" ng-model="user.rh" required>
+                                        <option value="A+">A+</option>
+                                        <option value="A-">A-</option>
+                                        <option value="O+">O+</option>
+                                        <option value="O-">O-</option>
+                                        <option value="AB+">AB+</option>
+                                        <option value="AB-">AB-</option>
+                                        <option value="B+">B+</option>
+                                        <option value="B-">B-</option>
+                                    </select>
+                                    <span class="glyphicon glyphicon-tint form-control-feedback"></span>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="mdl-button mdl-button--raised"
+                                            data-dismiss="modal">
+                                        <i class="material-icons">input</i>
+                                    </button>
+                                    <button type="button" ng-class="{'disabled': myForm.$invalid}" ng-click="addUser(user)"
+                                            class="mdl-button mdl-button--raised mdl-button--colored">
+                                        <i class="material-icons">save</i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Final Modal: Create User -->
+            </div>
+        </div>
+    </div>
+    <!--Icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--getmdl.io-->
+    <script src="https://storage.googleapis.com/code.getmdl.io/1.0.3/material.js"></script>
+    <!-- iCheck initialization and personalization is also done here-->
+    <script src="../Scripts/custom.js"></script>
+    <!-- Navigation -->
+    <script>
+        $(document).ready(function () {
+            setLeftNavigationMenuHeight();
+        });
+    </script>
+</body>
+</html>

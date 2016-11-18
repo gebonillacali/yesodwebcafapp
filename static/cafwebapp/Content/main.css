@@ -1,0 +1,642 @@
+a {
+  text-decoration: none;
+  transition: all 0.3s;
+}
+body {
+    color: #868589;
+    background: url('../images/fondoFinal.png');
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 150%;
+    margin: 0;
+    padding: 0;
+}
+footer {
+  background: #808080;
+  padding: 1em;
+}
+h1,
+h4 {
+  color: #3e3e47;
+  font-size: 1.625em;
+  line-height: 150%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+h2 {
+  border: 1px solid #88a707;
+  border-radius: 3px;
+  color: #88a707;
+  font-size: 2.125em;
+  line-height: 150%;
+  margin: 0 auto;
+  margin-bottom: 2em;
+  margin-top: 2em;
+  max-width: 270px;
+  padding: 1em;
+  text-align: center;
+}
+h3 {
+  color: #be3376;
+  font-size: 1.5em;
+  margin: 0;
+  padding: 0.5em;
+  text-align: center;
+}
+header {
+  background: #3e3e47;
+  box-shadow: 0px 1px 10px rgba(0,0,0,0.5);
+  color: #fff;
+  height: 80px;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 9;
+}
+hr {
+  background: #88a707;
+  border: 0;
+  height: 1px;
+  margin: 0 auto;
+  margin-top: 2em;
+  padding: 0;
+  width: 70%;
+}
+p {
+  color: #868589;
+  line-height: 150%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+nav,
+ul,
+li,
+a {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+/*————————Boton enviar————————*/
+.btn-b {
+  background: #88a707;
+  border: 0px solid #2090e7;
+  border-bottom: 3px solid #646d07;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  padding: 8px;
+}
+.btn-b:hover {
+  background: #abc41a;
+  border-bottom: 3px solid #879314;
+}
+.btn-b:active {
+  background: #88a707;
+}
+#bottom_container {
+  overflow: hidden;
+}
+#contactform {
+  background: #2090e7;
+  margin: 3em auto;
+  margin-bottom: 0;
+  overflow: hidden;
+  width: 100%;
+}
+#contactform label {
+  color: #fff;
+  display: block;
+  font-size: 1.25em;
+  margin: 5px 0;
+  text-align: left;
+  vertical-align: baseline;
+}
+#c_btns {
+  margin-top: 1em;
+}
+#c_enviar {
+  display: block;
+  margin: 0 auto;
+  width: 100px;
+}
+.c_error {
+  color: #f00;
+  font-size: 12px;
+  margin-left: 5px;
+}
+#c_form {
+  margin: 0 auto;
+  margin-bottom: 2em;
+  margin-top: 2em;
+  width: 90%;
+}
+#c_form textarea {
+  min-height: 150px;
+  outline: 1px solid #fff;
+}
+.c_input,
+#c_form textarea {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  margin-bottom: 10px;
+  padding: 7px;
+  width: 98%;
+}
+input:focus,
+textarea:focus {
+  outline: none;
+}
+#c_information {
+  background: #25a25a;
+  border: solid 1px #ccc;
+  color: #fff;
+  font-size: 14px;
+  padding: 4px 0 4px 0;
+  text-align: center;
+  width: 100%;
+}
+.hide {
+  display: none;
+}
+#menuButton {
+  border: 1px solid rgba(136,167,7,0.4);
+  border-radius: 2px;
+  cursor: pointer;
+  margin: 0;
+  overflow: hidden;
+  padding: 0.7em 0.7em 0.7em 0.7em;
+  transition: all 0.3s;
+}
+#menuButton:before {
+  color: #fff;
+  content: "b";
+  font-family: "giowebsites";
+  font-size: 32px;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.7);
+  vertical-align: middle;
+}
+#menuButton:hover {
+  opacity: 0.4;
+}
+#menuMobile {
+  display: inline-block;
+  float: right;
+  margin: 1em 1em 0em 1em;
+  overflow: hidden;
+  padding: 0;
+}
+#menuNormal {
+  background: #3e3e47;
+  border-top: 4px solid #be3376;
+  display: block;
+  float: right;
+  margin: -0.7em 0 0 0;
+  width: 100%;
+}
+#menuNormal ul li {
+  cursor: pointer;
+  display: block;
+}
+#menuNormal ul li a {
+  color: #fff;
+  display: block;
+  font-size: 18px;
+  padding: 0.3em 1em;
+  text-transform: uppercase;
+}
+#menuNormal ul li a:hover {
+  background: #88a707;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.4);
+}
+#menuNormal ul li .azul {
+  background: #2090e7;
+}
+#menuNormal ul li .azul:hover {
+  background: #be3376;
+}
+#pag1 h1 {
+  margin: 2em 0 1em 0;
+}
+#pag2 {
+    background: #808080;
+    background: url("../images/img/ciudad.jpg") 50% 0 no-repeat fixed;
+    background-size: cover;
+    margin: 0 auto;
+    min-height: 200px;
+}
+#pag3 {
+    background: #808080;
+    background: url("../images/fondoFinal.png") 100% 0 no-repeat fixed;
+    background-size: auto;
+    margin: 0 auto;
+    min-height: 200px;
+}
+#pag4 {
+  background: #fc4e51;
+}
+#pag4 .fondo {
+  padding-top: 3em;
+}
+#pag5 {
+  text-align: center;
+}
+#pag5 h2 {
+  margin: 2em 1em 1.5em 1em;
+  display: inline-block;
+}
+#pag5 h3 {
+  color: #000;
+  font-size: 17px;
+}
+.banner {
+  background: #808080;
+  height: 450px;
+  margin: 0 auto;
+  width: 100%;
+}
+.caja {
+  background: #fff;
+  border-radius: 3px;
+  display: block;
+  margin: 3em 0;
+  padding: 0;
+  width: 100%;
+}
+.caja h3 {
+  display: block;
+}
+.caja p {
+  padding: 1em 0.5em 0.5em 0.5em;
+}
+.base {
+  display: block;
+  margin: 0 auto;
+  padding: 0.5em;
+  width: 250px;
+}
+.base img {
+  border-radius: 50%;
+  box-shadow: 0px 0px 28px rgba(0,0,0,0.6);
+  width: 100%;
+}
+.contenedor1 h4 {
+  color: #000;
+  font-size: 1.5em;
+}
+.contenedor2,
+.contenedor3 {
+  width: 100%;
+}
+.cajaPlanesWeb {
+  margin-bottom: 0;
+  padding: 0;
+}
+.detalleContacto {
+  display: block;
+  font-size: 0.875em;
+  margin-bottom: 2em;
+  vertical-align: top;
+  width: 100%;
+}
+.detalleContacto h4 {
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: lighter;
+  margin: 1em 0;
+}
+.detalleContacto .mail:before {
+  content: "q";
+}
+.detalleContacto .phone:before {
+  content: "s";
+}
+.detalleContacto .location:before {
+  content: "p";
+}
+.detalleContacto .phone:before,
+.detalleContacto .mail:before,
+.detalleContacto .location:before {
+  border: 1px solid #fff;
+  border-radius: 50%;
+  display: block;
+  font-family: giowebsites;
+  font-size: 1em;
+  margin: 0 auto;
+  margin-bottom: 0.5em;
+  padding: 0.3em;
+  vertical-align: middle;
+  width: 25px;
+}
+.irArriba {
+  cursor: pointer;
+}
+.irArriba:before {
+  display: inline-block;
+  background: rgba(128,128,128,0.7);
+  bottom: 1em;
+  color: #fff;
+  content: "a";
+  font-family: giowebsites;
+  font-size: 1.5em;
+  padding: 0.4em;
+  position: fixed;
+  right: 1em;
+  vertical-align: top;
+  z-index: 8;
+  border-radius: 2px;
+  box-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+}
+.contratar {
+  border: 1px solid #000;
+  color: #000;
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0 auto;
+  margin-top: 0.7em;
+  padding: 0.7em;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.3s;
+  width: 90px;
+}
+.contratar:hover {
+  background: #be3376;
+  color: #fff;
+  border: 0;
+  font-weight: normal;
+}
+.fondo {
+  padding: 1em;
+  padding-bottom: 3em;
+}
+.lista {
+  margin: 0;
+  padding: 1.5em;
+}
+.listaDetalle {
+  border: 1px solid rgba(134,133,137,0.3);
+  line-height: 150%;
+  padding: 0.7em 0.5em;
+}
+.logo {
+  float: left;
+  margin: 0 1em;
+  padding: 0.5em 1em 0.5em 0;
+  vertical-align: middle;
+  width: 118px;
+}
+.logo img {
+  width: 100%;
+}
+.magenta {
+  color: #be3376;
+  font-weight: bold;
+}
+.negro {
+  background: rgba(0,0,0,0.5);
+  background: url("../img/planesWeb.jpg") 50% 0 no-repeat;
+  background-size: cover;
+  height: 300px;
+  margin: 0 auto;
+  padding: 3em 0;
+  text-align: center;
+  width: 100%;
+}
+.negro h2 {
+  display: inline-block;
+  margin-bottom: 0;
+  margin-top: 1em;
+}
+.negro p {
+  color: #fff;
+  margin: 4em 0 1em 0;
+  padding: 0 1em;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+}
+.nosotros {
+  margin-top: 7em;
+}
+.nosotros p {
+  font-size: 1.25em;
+  color: #fff;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+  margin: 1.5em 0 1em 0;
+}
+.planesWeb {
+  background: #fff;
+  border-radius: 3px;
+  box-shadow: 0px 0px 25px rgba(0,0,0,0.7);
+  color: #000;
+  display: block;
+  margin: 0 0 2em 0;
+  padding: 2em 0;
+  text-align: center;
+  width: 100%;
+}
+.planesWeb h3 {
+  display: block;
+  text-transform: uppercase;
+}
+.precio {
+  display: block;
+  font-size: 40px;
+  font-weight: bold;
+  margin: 0;
+  padding: 0.8em 0;
+}
+.precio sup {
+  font-size: 20px;
+  margin-right: 0.3em;
+}
+.small p {
+  color: rgba(134,133,137,0.8);
+  font-size: 0.8em;
+}
+@media screen and (min-width: 768px) {
+  #contactform #c_form {
+    width: 700px;
+  }
+  #menuNormal {
+    border-top: none;
+    height: 80px;
+    margin: 0;
+    width: 78%;
+  }
+  #menuNormal ul {
+    float: right;
+    margin-top: 1.4em;
+  }
+  #menuNormal ul li {
+    display: inline-block;
+  }
+  #menuNormal ul li a {
+    border-radius: 2px;
+    font-size: 16px;
+    padding: 0.3em 0.5em;
+  }
+  #menuNormal ul li a:hover {
+    background: #88a707;
+    border-bottom: 2px solid #748703;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.4);
+  }
+  #menuNormal ul li .azul {
+    border-bottom: 2px solid #03568e;
+  }
+  #menuNormal ul li .azul:hover {
+    border-bottom: 2px solid #9b185d;
+  }
+  #pag1 {
+    padding-bottom: 3em;
+  }
+  #pag1 p {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  #pag4 {
+    position: relative;
+  }
+  .base {
+    width: 200px;
+  }
+  .caja {
+    display: inline-block;
+    margin-right: 5%;
+    margin-top: 1em;
+    min-height: 390px;
+    vertical-align: top;
+    width: 46.5%;
+  }
+  .caja:nth-child(even) {
+    margin-right: 0;
+  }
+  .cajaPlanesWeb {
+    margin-top: 305px;
+    overflow: hidden;
+    padding: 0 0.6em 5em 0.6em;
+    position: relative;
+  }
+  .central {
+    background: #88a707;
+    box-shadow: 0px 0px 25px rgba(0,0,0,0.9);
+    position: absolute;
+    top: 1em;
+    width: 36%;
+    z-index: 8;
+  }
+  .centro {
+    margin: 0 auto;
+    margin-top: 0.5em;
+    position: relative;
+    width: 700px;
+  }
+  .content {
+    max-width: 90%;
+    margin: 0 auto;
+    height: 80px;
+  }
+  .contenedor1,
+  .contenedor2,
+  .contenedor3 {
+    margin: 0 auto;
+    max-width: 90%;
+  }
+  .contenedor3 {
+    padding-bottom: 0em;
+  }
+  .detalleContacto {
+    display: inline-block;
+    margin-right: 4%;
+    width: 30%;
+  }
+  .detalleContacto:last-child {
+    margin-right: 0;
+  }
+  .fondo {
+    padding: 1em 0;
+  }
+  .left {
+    float: left;
+    margin-top: 5em;
+  }
+  .logo {
+    margin-left: 0;
+  }
+  .negro {
+    height: 400px;
+    left: 0;
+    position: absolute;
+    top: 0;
+  }
+  .negro h2 {
+    display: block;
+    margin: 0 auto;
+    margin-top: 1em;
+  }
+  .negro p {
+    display: inline-block;
+    margin-top: 4em;
+    max-width: 90%;
+    padding: 0;
+  }
+  .nosotros {
+    margin: 0 auto;
+    margin-top: 9em;
+    width: 90%;
+  }
+  .planesWeb {
+    display: inline-block;
+    vertical-align: middle;
+    width: 33.2%;
+    margin-bottom: 4.3em;
+  }
+  .planesWeb h3 {
+    font-size: 1.4em;
+  }
+  .right {
+    float: right;
+    margin-top: 5em;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #quitar,
+  #quitar1 {
+    margin-right: 0;
+  }
+  .caja {
+    min-height: 420px;
+    width: 30.5%;
+  }
+  .caja:nth-child(even) {
+    margin-right: 3%;
+  }
+  .caja:nth-child(odd) {
+    margin-right: 3%;
+  }
+  .cajaPlanesWeb {
+    padding-bottom: 1.8em;
+  }
+  .contenedor3 {
+    padding-bottom: 4em;
+  }
+  .content,
+  .contenedor1,
+  .contenedor2,
+  .contenedor3 {
+    margin: 0 auto;
+    max-width: 80%;
+  }
+  .negro p {
+    max-width: 80%;
+  }
+  .nosotros {
+    width: 80%;
+  }
+}

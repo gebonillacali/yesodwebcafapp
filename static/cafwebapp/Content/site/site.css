@@ -1,0 +1,570 @@
+/*
+	Colors used by the old theme
+	2A3F54  Dark Blue from footer and nav title 
+*/
+
+/*
+	Rayco theme colors
+	Rayco logo blue = #11467C
+	Rayco accent blue = #3474FF
+	Rayco accent blue lighter = #34A7FF
+	Rayco dark background (side-menu) = #333333
+	Rayco dark lighter (side-menu hover) = #444444
+	Secondary text black (lighter) = #0x757575
+	Primary text (darker) = #212121
+	Primary text (even darker) = #141414
+	Collapsed submenu background color: original: #3E5367;
+	Checked Green color: #00e866
+*/
+
+
+body{
+  /* font-family: 'Open Sans Condensed', 'Open Sans', 'Lato', sans-serif; */
+	font-family: 'Open Sans', sans-serif;
+	color: #212121;
+}
+
+/* Main Background Color */
+body .container.body .right_col {
+  background: #FFFFFF;
+}
+
+
+h1,h2,h3,h4,h5,h6{
+	color: #3474FF;
+}
+
+/* Maps */
+#siteMiniMap{
+ min-height: 250px;
+}
+/* /Maps */
+
+/* Carrousel */
+.siteCarousel{
+	max-height: 240px;
+	overflow: hidden;
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+
+.siteCarousel img{
+	width: 100%;
+	height: auto;
+}
+/* /Carrousel */
+
+.maint-inline{
+	display: inline;
+}
+
+/* Custom Buttons */
+.btn{
+	transition: background-color 0.4s ease;
+}
+.btn-pdf{
+	background-color: #990000;
+	color: #f0f0f0;
+}
+.btn-pdf:hover{
+	background-color: #E60000;
+	color: white;
+}
+.btn-excel{
+	background-color: #207245;
+	color: #f0f0f0;
+}
+.btn-excel:hover{
+	background-color: #31ae69;
+	color: white;
+}
+.btn-full{
+	width: 100%;
+}
+
+.btn-html{
+	background-color: #3474FF;
+	color: #f0f0f0;
+}
+.btn-html:hover{
+	background-color: #34A7FF;
+	color: white;
+}
+/* /Custom Buttons */
+
+/* Tables */
+.table-maint > thead >tr > th{
+	color: #3474FF;
+}
+
+.table-small-font tr td{
+	font-size: 12px;
+}
+
+.color-primary{
+	color: #3474FF;
+}
+
+.bold{
+	font-weight: bold;
+}
+
+.bold-primary{
+	color: #3474FF;
+	font-weight: bold;
+}
+
+.bold-secondary{
+	color: #11467C;
+	font-weight: bold;
+}
+
+.table-maint > tbody > tr:hover{
+	background-color: #EDEDED;
+	color: 141414;
+}
+
+td.max-350{
+	max-width: 350px;
+}
+/* /Tables */
+
+/* Custom Links */
+
+a.link-maint-action{
+	font-size: 13px;
+	transition: all 0.4s ease;
+}
+
+a.link-maint-action:link{
+	color: #212121;
+}
+a.link-maint-action:visited{
+	color: #212121;
+}
+a.link-maint-action:hover{
+	color: #3474FF;
+	text-decoration: none;
+}
+a.link-maint-action:active{
+	color: #212121;
+}
+
+a.link-maint-main{
+	font-size: 13px;
+	transition: all 0.4s ease;
+}
+
+a.link-maint-main:link{
+	color: #11467C;
+}
+a.link-maint-main:visited{
+	color: #11467C;
+}
+a.link-maint-main:hover{
+	color: #3474FF;
+	text-decoration: none;
+}
+a.link-maint-action:active{
+	color: #3474FF;
+}
+
+
+
+a.link-maint:link{
+	color: #11467C;
+	transition: all 0.4s ease;
+}
+a.link-maint:visited{
+	color: #11467C;
+}
+a.link-maint:hover{
+	color: #3474FF;
+	text-decoration: none;
+}
+a.link-maint:active{
+	color: #11467C;
+}
+/* /Custom Links */
+
+/* Custom Labels */
+.label-maint{
+	color: #3474FF;
+	font-weight: 400;
+}
+
+/* /Custom Labels */
+
+/* Custom Input Fields */
+.input-text-bsmall{
+	min-width: 60px;
+	max-width: 80px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: 5px;
+}
+
+/* /Custom Input Fields */
+
+/* Selectors */
+.selector-maint-sm{
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	font-size: 12px;
+	padding: 4px;
+	width: 120px;
+}
+.toolbox-btn{
+	margin-top: 4px;
+	margin-right: 4px;
+	margin-left: 4px;
+}
+
+/* /Selectors */
+
+.title-maint{
+	width: 100%;
+  height: 55px;
+  padding: 10px 0;
+	padding-top: 0;
+}
+
+/* Main Map Style */
+#activityMap
+{
+	height: 85vh;
+	background-color: #F0F0F0;
+}
+
+
+.side-menu{
+	
+}
+
+/* Left navigation bar */
+.left_col{
+	background-color: #333333;	
+	min-height: 120vh; /* Solución provisional, probablemente debe trabajarse con javascript*/
+}
+
+#drawer_left_menu{
+	/* Solución provisional, probablemente debe trabajarse con javascript*/
+}
+
+.nav_title{
+	background-color: #3474FF;
+	background-color: #333333;
+}
+
+#sidebar-menu{
+	
+}
+
+
+/* Side Menu navigation links*/
+.nav.side-menu> li > a{
+	font-weight: 600;
+	/*
+  color: #BBBBBB !important; 
+	*/
+	color: #F0F0F0;
+}
+
+.side-menu li a{
+	transition: all 0.2s linear;
+	border-right: 0px solid black;
+}
+
+.side-menu li a i{
+	transition: all 0.2s linear;
+}
+
+.side-menu > li  >a:hover{
+	background-color: #444444 !important;
+	color: white;
+	border-right: 5px solid #3474FF;
+}
+
+.side-menu li a:hover > i{
+	color: #34A7FF !important;
+	animation: rotate-bounce 0.5s ease-out;
+}
+
+@keyframes rotate-bounce{
+	0% {
+    transform: rotate(0deg);
+  }
+	12.5%{
+		transform: rotate(-10deg);
+	}
+	25%{
+		transform: rotate(0deg);
+	}
+	37.5%{
+		transform: rotate(10deg);
+	}
+	50%{
+		transform: rotate(0deg);
+	}
+	62.5%{
+		transform: rotate(-4deg);
+	}
+	75%{
+		transform: rotate(0deg);
+	}
+	87.5%{
+		transform: rotate(4deg);
+	}
+	100%{
+		transform: rotate(0deg);
+	}
+}
+
+.nav.side-menu> li.active > a {
+/* Active side link custom.css 545 */
+	background-color: #444444;
+}
+/* /Side Menu navigation links */
+
+
+/* SUB LINK Style when menu is collapsed */
+body.nav-sm ul.nav.child_menu {
+  background: #333333;
+	margin-left: 10px;
+	-webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+body.nav-sm ul.nav.child_menu:before{
+	width: 0;
+	height: 0;
+	position: absolute;
+	left: -9px;
+	display: block;
+	border-top: 9px solid transparent;
+	border-bottom: 9px solid transparent;
+	border-right: 9px solid #333333;
+} 
+body.nav-sm ul.nav.child_menu>li{
+	transition: all 0.2s linear;
+	font-size: 20px;
+}
+body.nav-sm ul.nav.child_menu > li >a{
+	color: white !important;
+	font-weight: 300;
+}
+body.nav-sm ul.nav.child_menu > li:hover{
+  background: #444444;
+	opacity: 1;
+	border-right: 5px solid #3474FF;
+}
+/*************************/
+
+/* Side Menu navigation SUB LINKS lines 501 to 533 in custom.css*/
+body.nav-sm .nav.side-menu li.active-sm {
+	/* Line 41 in custom.css */
+  border-right: 5px solid #3474FF;
+}
+
+.nav.side-menu> li.current-page, .nav.side-menu> li.active {
+  /* Line 539 Right border of active sub links*/
+	border-right: 5px solid #3474FF;
+}
+
+/*
+.nav.child_menu li {
+	transition: all 0.2s linear;
+}
+*/
+
+body.nav-md ul.nav.child_menu li{
+	transition: all 0.2s linear;
+	background: #333333;
+}
+
+body.nav-md ul.nav.child_menu li a{
+	opacity: 0.7;
+	color: white;
+}
+
+body.nav-md ul.nav.child_menu li:hover > a{
+	/*
+	background: #333333;
+	*/
+	opacity: 1;
+}
+
+body.nav-md ul.nav.child_menu li:hover:before{
+	/*Changes the sub menu's cicle color */
+	background: white;
+	opacity: 1;
+}
+
+.nav.child_menu li {
+  padding-left: 36px
+}
+body.nav-md ul.nav.child_menu li:before {
+	/* Timeline circle */
+  background: #3474FF;
+	transition: all 0.2s linear;
+	opacity: 0.5;
+  bottom: auto;
+  content: "";
+  height: 8px;
+  left: 23px;
+  margin-top: 15px;
+  position: absolute;
+  right: auto;
+  width: 8px;
+  z-index: 1;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+body.nav-md ul.nav.child_menu li:after {
+	/* Line that contains the circle */
+  border-left: 1px solid #3474FF;
+  bottom: 0;
+  content: "";
+	opacity: 0.25;
+  left: 27px;
+  position: absolute;
+  top: 0;
+}
+body.nav-md ul.nav.child_menu li:nth-child(1):after {
+	/* Line that contains the circle for the last element */
+  border-left: 1px solid #3474FF;
+  margin-top: 20px;
+  content: "";
+  left: 27px;
+  position: absolute;
+  top: 0;
+}
+body.nav-md ul.nav.child_menu li:nth-last-child(1):after {
+	/* Line that contains the circle for the last element */
+  border-left: 1px solid #3474FF;
+	height: 50%;
+  bottom: 0;
+  content: "";
+  left: 27px;
+  position: absolute;
+  top: 0;
+}
+.nav.side-menu>li>a, .nav.child_menu>li>a {
+  /*
+	color: #E7E7E7 !important;
+  font-weight: 500;
+	*/
+}
+/* /Side Menu navigation SUB LINKS */
+
+/* Usermenu (top bar) navigation links */
+.dropdown-usermenu> li > a{
+	color: #757575;
+	transition: all 0.2s linear;
+	border-right: 0px solid black;
+}
+
+.dropdown-usermenu> li > a:hover{
+	color: #212121;
+	border-right: 5px solid #3474FF;
+}
+/* Hamburguer button */
+#menu_toggle{
+	transition: all 0.4s ease;
+	opacity: 0.5;
+	color: #3474FF;
+}
+#menu_toggle:hover{
+	opacity: 1;
+	color: #3474FF;
+}
+/* /Usermenu (top bar) navigation links */
+
+/* Master Footer */
+.copyright-info > p{
+	color: #757575;
+}
+.left-marg{
+	margin-left: 5px;
+}
+/* /Master Footer */
+
+/* Color and background classes */
+.c-primary{
+	color: #11467C;
+}
+
+.c-chgreen{
+	color: #00d45d;
+}
+
+.bg-accent{
+	background: #3474FF !important;
+  border: 1px solid #3474FF !important;
+  color: #fff;
+}
+
+.flat{
+	background: #3474FF;
+}
+
+/* /Color and background classes */
+
+/* Alignment classes */
+.align-center{
+	text-align: center;
+}
+td.valign-middle{
+	vertical-align: middle;
+}
+.img-circle-large{
+	width: 72px;
+	height: 72px;
+	border-radius: 50%;
+}
+
+/* /Alignment classes */
+
+/* List styles */
+ul.plain-list{
+	list-style-type: none;
+	padding: 0;
+}
+
+ul.plain-list > li{
+	margin-top: 3px;
+	margin-bottom: 3px;
+}
+
+ul.checked-list{
+	list-style-type: none;
+	padding: 0;
+}
+
+ul.checked-list  li{
+	padding-left: 8px;
+}
+
+ul.checked-list  li:before{
+	content: "\f00c";
+	padding-right: 8px;
+	font-family: FontAwesome;
+	color: #3474FF;
+}
+/* /List styles */
+
+/* Form Groups */
+div.maint-form-group > label{
+	color: #3474FF;
+	font-weight: normal;
+}
+
+.form-control{
+	border-radius: 4px;
+}
+
+/* /Form Groups */
+
+
+

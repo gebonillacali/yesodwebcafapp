@@ -1,0 +1,19 @@
+/static StaticR Static appStatic
+
+/favicon.ico FaviconR GET
+/robots.txt RobotsR GET
+/index.html IndexR GET
+
+/ HomeR GET POST
+
+/tipousuario TipoUsuarioR GET POST
+
+/pruebasfisicas PruebasFisicasR GET POST
+/pruebasfisicas/#UsuarioId PruebasFisicas1R GET
+/pruebasfisicas/update/#PruebasFisicasId PruebasFisicas2R PUT
+/pruebasfisicas/delete/#PruebasFisicasId PruebasFisicas3R DELETE
+
+/usuario UsuarioR GET POST
+/usuario/update/#UsuarioId Usuario2R PUT
+/usuario/#UsuarioId Usuario1R GET
+/usuario/delete/#UsuarioId Usuario3R DELETE

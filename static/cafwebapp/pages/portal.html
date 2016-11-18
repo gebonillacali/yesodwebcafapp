@@ -1,0 +1,150 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>CENTRO DE ACTIVIDAD FÍSICA</title>
+    <!-- Descripción: entre 155 a 160 caracteres -->
+    <meta name="description" content="Centro de actividad física">
+    <!-- Fuente -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:300,700,400' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" href="../static/images/img/favicon.icon">
+    <!-- Normaliza estilos -->
+    <link href="../static/Content/normalize.css" rel="stylesheet" />
+    <!-- Vinculación mi hoja de estilos -->
+    <link href="../static/Content/main.css" rel="stylesheet" />
+    <!-- Vinculación galeria fotografica -->
+    <link href="../static/Content/style.css" rel="stylesheet" />
+    <!-- IconFonts -->
+    <link href="https://fontastic.s3.amazonaws.com/sgL6HfwNREuWYmKoQK2dtB/icons.css" rel="stylesheet">
+    <!-- Prefijos-->
+    <script src="../static/Scripts/prefixfree.min.js"></script>
+</head>
+<body>
+    <div class="irArriba"></div>
+    <header>
+        <div class="content">
+            <!-- Logo Empresa -->
+            <a href="#pag1">
+                <figure class="logo" title="giowebsites">
+                    <img src="../static/images/logotipo_ueb.png" />
+                </figure>
+            </a>
+            <!-- Inicio Menu de Navegación -->
+            <!-- Cambio Menu a Boton Vista Movil -->
+            <nav id="menuMobile">
+                <div id="menuButton"></div>
+            </nav>
+            <!-- Menu Vista Normal -->
+            <nav id="menuNormal">
+                <ul>
+                    <li><a href="#pag1">Inicio</a></li>
+                    <li><a href="../static/cafwebapp/pages/login.html">Login</a></li>
+                    <li><a href="../static/cafwebapp/pages/registro.html" class="azul">Regístrese</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- página Inicio -->
+    <section id="pag1" class="fondo">
+        <!-- Inicio Galería  -->
+        <div class="sp-slideshow">
+
+            <input id="button-1" type="radio" name="radio-set" class="sp-selector-1" checked="checked" />
+            <label for="button-1" class="button-label-1"></label>
+
+            <input id="button-2" type="radio" name="radio-set" class="sp-selector-2" />
+            <label for="button-2" class="button-label-2"></label>
+
+            <input id="button-3" type="radio" name="radio-set" class="sp-selector-3" />
+            <label for="button-3" class="button-label-3"></label>
+
+            <input id="button-4" type="radio" name="radio-set" class="sp-selector-4" />
+            <label for="button-4" class="button-label-4"></label>
+
+            <input id="button-5" type="radio" name="radio-set" class="sp-selector-5" />
+            <label for="button-5" class="button-label-5"></label>
+
+            <label for="button-1" class="sp-arrow sp-a1"></label>
+            <label for="button-2" class="sp-arrow sp-a2"></label>
+            <label for="button-3" class="sp-arrow sp-a3"></label>
+            <label for="button-4" class="sp-arrow sp-a4"></label>
+            <label for="button-5" class="sp-arrow sp-a5"></label>
+
+            <div class="sp-content">
+                <div class="sp-parallax-bg"></div>
+                <ul class="sp-slider clearfix">
+                    <li><img src="../static/images/instalaciones/1.jpg" alt="image01" /></li>
+                    <li><img src="../static/images/instalaciones/2.jpg" alt="image02" /></li>
+                    <li><img src="../static/images/instalaciones/3.jpg" alt="image03" /></li>
+                    <li><img src="../static/images/instalaciones/4.jpg" alt="image04" /></li>
+                    <li><img src="../static/images/instalaciones/5.jpg" alt="image05" /></li>
+                </ul>
+            </div><!-- sp-content -->
+    </section>
+    </div><!-- sp-slideshow -->
+    <section id="pag2" class="fondo">
+        <!-- Fin Galería  -->
+        <h1>CENTRO DE ACTIVIDAD FÍSICA  <br> Universidad El Bosque</h1>
+    </section>
+    <script src="js/modernizr.custom.83228.js"></script>
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script>
+        //$(document).ready(function(){
+
+        // ------------------------------
+
+        // Header detecion resolucion
+        jQuery(function ($) {
+            var open = false;
+
+            function resizeMenu() {
+                if ($(this).width() < 768) {
+                    if (!open) {
+                        $("#menuNormal").hide();
+                    }
+                    $("#menuMobile").show();
+                }
+                else if ($(this).width() >= 768) {
+                    if (!open) {
+                        $("#menuNormal").show();
+                    }
+                    $("#menuMobile").hide();
+                }
+            }
+            // Header efecto deslizar menu
+            function setupMenuButton() {
+                $("#menuMobile").on('click', function (e) {
+                    $('#menuNormal').slideToggle('fast');
+                    open = !open;
+                });
+            }
+            $(window).resize(resizeMenu);
+            resizeMenu();
+            setupMenuButton();
+        });
+
+        // ------------------------------
+
+        // Boton irArriba
+        $('.irArriba').click(function () {
+            $('body, html').animate({
+                scrollTop: '0px'
+            }, 300);
+        })
+        // Aparecer y desaparecer boton
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 0) {
+                $('.irArriba').slideDown(300);
+            } else {
+                $('.irArriba').slideUp(300);
+            }
+        });
+
+        // ------------------------------
+
+        //});
+
+    </script>
+</body>
+</html>

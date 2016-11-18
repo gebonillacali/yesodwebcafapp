@@ -1,0 +1,36 @@
+TipoUsuario json
+    nombre Text Maybe
+
+Usuario json
+    tipoUsuario TipoUsuarioId Update
+    nombre Text Maybe Update
+    fechaNacimiento Day default=CURRENT_DATE Maybe Update
+    genero Text Maybe Update
+    identificacion Text Maybe Update
+    telefono Text Maybe Update
+    email Text Maybe Update
+    rh Text Maybe Update
+    fechaRegistro Day default=CURRENT_DATE Maybe
+    deriving Show
+
+PruebasFisicas json
+    idUsuario UsuarioId
+    peso Int Update
+    estatura Text Maybe Update
+    tensionArterial Text Maybe Update
+    frecuenciaCardiaca1 Text Maybe Update
+    frecuenciaCardiaca2 Text Maybe Update
+    frecuenciaCardiaca3 Text Maybe Update
+    fechaPrueba Day default=CURRENT_DATE Maybe
+    wells Text Maybe Update
+    abdominales Text Maybe Update
+    fuerzaBrazos Text Maybe Update
+    fuerzaPierna Text Maybe Update
+    observaciones Text Maybe Update
+    deriving Show
+
+PreguntasInscripcion json
+    pregunta1 Bool
+    
+
+ -- By default this file is used in Model.hs (which is imported by Foundation.hs)
