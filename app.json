@@ -5,7 +5,7 @@
   "repository": "https://github.com/mfine/heroku-buildpack-stack",
   "env": {
     "BUILDPACK_URL": {
-      "description": "Heroku buildpack for deploying Haskell apps using Stack",
+      "description": "Heroku buildpack for deploying Haskell apps using Stack solving",
       "value": "https://github.com/mfine/heroku-buildpack-stack"
     }
   }
