@@ -39,6 +39,7 @@ packages:
 - location: .
 - location:
     git: https://mfine:abc123@github.com/mfine/heroku-buildpack-stack.git
+    commit: 25be72fcb2f0fb7d837658ba6bfcdfe69bc6470a
   extra-dep: true
 
 # Dependency packages to be pulled from upstream that are not in the resolver
