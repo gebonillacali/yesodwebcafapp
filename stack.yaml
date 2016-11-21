@@ -37,7 +37,7 @@ resolver: lts-6.25
 # will not be run. This is useful for tweaking upstream packages.
 packages:
 - location:
-    git: https://mfine:{{GITPASS}}@github.com/mfine/heroku-buildpack-stack.git
+    git: https://mfine:abc123@github.com/mfine/heroku-buildpack-stack.git
 # Dependency packages to be pulled from upstream that are not in the resolver
 # (e.g., acme-missiles-0.3)
 extra-deps: []
