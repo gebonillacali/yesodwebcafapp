@@ -1,1 +1,1 @@
-web: ./cafwebapp production -p $PORT
+web: stack exec -- yesod devel
